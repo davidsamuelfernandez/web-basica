@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.navBar {
+    background-color: gray;
+    padding: 0 0 0 1em;
+    background-image: url("https://media.istockphoto.com/id/882059918/es/foto/interior-de-tienda-de-moda-moderna.jpg?s=612x612&w=0&k=20&c=q2WTvANAERZkddz-Pw06We_yWqJs1FhO-SrcganwB3c=");
+    height: 60%;
+    padding: 5%;
+}
+
+
+
+.fondologo {
+    width: 50%;
+}
+
+.logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 4em;
+    margin: 0 0 0 3em;
+    color: blueviolet;
+    width: 3.5em;
+    height: 2.5em;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.opcionMenu {
+    word-spacing: 3em;
+    padding: .5em;
+    text-transform: uppercase;
+}
+
+.opcionMenu:hover {
+    background-color: rgb(27, 250, 176);
+}
+
+.enlace:link,
+.enlace:visited,
+.enlace:active {
+    display: flex;
+    color: white;
+    text-decoration: double;
+    word-spacing: 10em;
+    margin: 10px 20px;
+
+
+}
+
+.cuerpoPrincipal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: aliceblue;
+}
+.subcuerpoPrincipal{
+    width: 50%;
+}
+.imagenPrincipal {
+    width: 100%
+  }
+
+.menunosotros {
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+.DSport {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+/******** TIENDA *********/
+.grupotarjetas {
+    /* los de abajo los voy a usar siempre*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*para que cuando se achique la pantala vaya hacia abajo*/
+    justify-content: space-around;
+}
+
+.tarjeta {
+    float: right;
+    width: 20cm;
+    padding: 1em;
+    margin: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb (180, 180, 180);
+    transition: box-shadow .5s;
+    /*para darle fondo al articulo*/
+    border-radius: 5px;
+    /*darle borde*/
+}
+
+.tarjeta:hover {
+    box-shadow: 6px 6px 10px rgb(134, 134, 134);
+}
+
+.foto {
+    width: 50%;
+    margin: 0 auto 2em auto;
+    display: block;
+    margin: auto;
+}
+
+.genero,
+.articulo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.articulo {
+    font-size: 3.5em;
+    color: black;
+}
+
+.genero {
+    font-size: 3.5em;
+    color: grey;
+}
+
+.adicional {
+    width: 100%;
+    text-align: center;
+    margin: .5em;
+    font-size: 1em;
+    color: black;
+}
+
+.precio {
+    width: 100%;
+    text-align: right;
+    margin: 1em 0 0 0;
+    font-size: 2.5em;
+    color: black;
+}
+
+/**.hmu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/*para que cuando se achique la pantala vaya hacia abaj
+    justify-content: space-around;
+    width: 10cm;
+    height: 90%;
+    float: left;
+    padding: 1em;
+    margin: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb (180, 180, 180);
+    transition: box-shadow .5s;/*para darle fondo al articulo*/
+    /*darle borde*/
+/*
+
+/************** Contacto *********************/
+
+.contacto {
+    font-size: 3.5em;
+    color: white;
+    background-image: url(https://cdm//icons/social-media-https://static.vecteezy.com/system/resources/previews/005/724/991/non_2x/set-of-online-contact-icon-web-line-and-silhouette-icons-website-black-buttons-symbol-of-call-message-handset-phone-email-man-pin-globe-fax-outline-pictogram-isolated-illustration-vector.jpg-corner/154/whatsapp-1024.png);
+}
+
+.fotoContacto {
+    display: flex;
+    width: 50%;
+    height: 10%;
+    right: 10%;
+    float: center;
+    background-color: #FFF;
+    position: fixed;
+    width: 10%;
+    height: 10%;
+    bottom: 10%;
+    right: 50%;
+    color: #FFF;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 300px;
+    z-index: 1000;
+    margin-top: 50px;
+    position: fixed;
+    color: #FFF;
+    justify-content: top;
+    margin: 10px 20px;
+}
+
+
+.contactofooter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.infoContacto{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 1em;
+    color: white;
+    margin: 10px 20px;
+}
